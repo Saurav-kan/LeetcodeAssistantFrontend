@@ -1,4 +1,4 @@
-# 🔮 AlgoMentor: Your LeetCode AI Assistant
+#  AlgoMentor: Your LeetCode AI Assistant
 
 AlgoMentor is a Chrome extension that acts as your personal AI-powered assistant for LeetCode, providing hints, explaining solutions, and helping you practice more effectively.
 
@@ -52,5 +52,3 @@ The extension will automatically reload as you make changes to the code.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Styling
 
 ---
-
-Happy coding!
