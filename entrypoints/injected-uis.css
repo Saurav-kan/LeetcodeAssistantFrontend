@@ -10,11 +10,12 @@
   background-color: rgba(99, 109, 116, 0.3);
   backdrop-filter: blur(3px) saturate(180%);
   /* -webkit-backdrop-filter: blur(10px) saturate(180%); */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Thin, semi-transparent white border */
+  border: 2px solid rgba(59, 130, 246, 0.6); /* Blue border */
   border-radius: 25px;
   z-index: 10000;
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
@@ -45,4 +46,55 @@
   color: #888;
   text-align: center;
   /* background-color: #2a2a2a; */
+}
+
+/* Score Circle Styles */
+.score-circle-container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-circle-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.score-circle-bg {
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
+.score-circle-progress {
+  stroke: #3b82f6; /* Blue color matching the border */
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.score-circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+.score-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
 }

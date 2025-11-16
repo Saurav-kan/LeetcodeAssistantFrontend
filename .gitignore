@@ -5,13 +5,14 @@
 .wxt/
 .output/
 
-# IDEs
-.vscode/
-*.code-workspace
+# Build outputs
+/dist
+/out
 
-# OS
-.DS_Store
-Thumbs.db
+# Packed extension files
+*.crx
+*.xpi
+*.zip
 
 # Logs
 logs
@@ -19,13 +20,13 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
-.npm/
-.yarn/
 
-# Misc
-dist
-coverage
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
 .env
-.env.local
-.env.*.local
+.env*.local
